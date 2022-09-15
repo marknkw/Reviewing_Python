@@ -9,7 +9,7 @@
 #del lista[índice] - del pode ser usado quando o índice do índice que se quer remover da lista é conhecido
 
 #Removendo elementos de uma lista - método pop()
-#lista.pop() - remove o último elemento da pilha da lista['1','2','3'] -> lista.pop() -> lista['1','2'] e o retorna como valor
+#lista.pop() - remove o último elemento da pilha/lista['1','2','3'] -> lista.pop() -> lista['1','2'] e o retorna como valor
 #É possível armazenar o valor do retorno em uma variável para uso posterior
 #Ex: lista['1','2','3'] -> popped_lista = lista.pop() -> popped_lista == 3
 
@@ -31,7 +31,8 @@ def tresPontoQuatro():
 convidados = tresPontoQuatro()
 for i in convidados:
     print(i + " você foi convidado para jantar.")
-print("-----------------3.4")
+print("------------------3.4")
+
 #Exercício 3.5
 def tresPontoCinco(lista):
 
@@ -43,7 +44,8 @@ def tresPontoCinco(lista):
 convidados = tresPontoCinco(convidados)
 for i in convidados:
     print(i + " você foi convidado para jantar.")
-print("-----------------3.5")
+print("------------------3.5")
+
 #Exercício 3.6
 def tresPontoSeis(convidados):
     print("Achamos uma mesa maior para os convidados com 6 lugares, em vez de 3." +
@@ -56,4 +58,22 @@ convidados = tresPontoSeis(convidados)
 
 for i in convidados:
     print(i + " você foi convidado para jantar.")
-print("-----------------3.6")
+print("------------------3.6")
+
+#Exercício 3.7
+def tresPontoSete(convidados):
+    for i in range(0, len(convidados)-2, 1):
+        convidado_removido = convidados.pop()
+        print(convidado_removido + " foi removido da lista de jantar por termos," +
+              " no momento, somente dois lugares.")
+    return convidados
+
+convidados = tresPontoSete(convidados)
+for i in convidados:
+    print(i + " você ainda está convidado para jantar")
+
+for i in range(0, len(convidados), 1):
+    del convidados[0]
+
+print(convidados)
+print("------------------3.7")
