@@ -13,4 +13,9 @@ def tresPontoTres():
 #Print dos exercícios
 for i in range(0, len(tresPontoUm()), 1):
     tresPontoDois(tresPontoUm()[i])
-    tresPontoDois(tresPontoTres()[i])
+print("------------------3.2")
+
+
+for i in range(0, len(tresPontoUm()), 1):
+    tresPontoDois(tresPontoUm()[i])
+print("------------------3.3")
