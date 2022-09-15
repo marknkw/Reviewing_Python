@@ -31,7 +31,7 @@ def tresPontoQuatro():
 convidados = tresPontoQuatro()
 for i in convidados:
     print(i + " você foi convidado para jantar.")
-
+print("-----------------3.4")
 #Exercício 3.5
 def tresPontoCinco(lista):
 
@@ -43,3 +43,17 @@ def tresPontoCinco(lista):
 convidados = tresPontoCinco(convidados)
 for i in convidados:
     print(i + " você foi convidado para jantar.")
+print("-----------------3.5")
+#Exercício 3.6
+def tresPontoSeis(convidados):
+    print("Achamos uma mesa maior para os convidados com 6 lugares, em vez de 3." +
+            "Convidaremos mais três pessoas")
+    convidados.insert(0, "Stephen Fry")
+    convidados.insert(int(float((len(convidados))/2)), "Jordan Peterson")
+    convidados.append("Byung-Chul-Han")
+    return convidados
+convidados = tresPontoSeis(convidados)
+
+for i in convidados:
+    print(i + " você foi convidado para jantar.")
+print("-----------------3.6")
