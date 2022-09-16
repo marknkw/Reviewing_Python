@@ -1,4 +1,4 @@
-## H2 Reviewing Python Language
+## H2 Reviewing Python: From 0 to Machine Learning
 ```
 	Reviewing Python contents will solidify perception, and general awareness of possible new solutions, 
 	and add value to the expertise already built upon 8 years of Python learning.
